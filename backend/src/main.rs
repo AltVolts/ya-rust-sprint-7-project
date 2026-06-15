@@ -300,14 +300,25 @@ fn parse_token_created(logs: &RpcLogsResponse, _program_id: Pubkey) -> Option<To
 }
 
 fn to_fixed_6(txt: &str) -> Result<u64> {
-    // TODO(student): parse a decimal string into an integer with 6 fixed decimals.
-    // Examples:
-    // - "120" -> 120_000_000
-    // - "120.12" -> 120_120_000
-    // - "0.000001" -> 1
-    // Extra digits after the 6th decimal place should be truncated, not rounded.
-    let _ = txt;
-    todo!("student task: implement fixed-6 parser")
+    let txt = txt.trim();
+    let (mut int_part, mut frac_part) = (txt, "");
+
+    // Если есть точка, то разбиваем на целую и дробную части
+    if let Some(dot) = txt.find('.') {
+        int_part = &txt[..dot];
+        frac_part = &txt[dot + 1..]
+    }
+
+    let int_val: u64 = int_part.parse().context("invalid integer part")?;
+
+    let frac_padded: String = frac_part.chars().take(6).collect::<String>(); // обрезаем до 6 цифр (truncate)
+    let frac_str = format!("{:0<6}", frac_padded); //  дополняем нулями справа если цифр меньше 6
+    let frac_val: u64 = frac_str.parse().context("invalid fractional part")?;
+    let result = int_val
+        .checked_mul(1_000_000)
+        .and_then(|v| v.checked_add(frac_val))
+        .ok_or(anyhow!("overflow in fixed-6 conversion"))?;
+    Ok(result)
 }
 
 #[cfg(test)]
@@ -338,9 +349,7 @@ mod tests {
 
     #[test]
     fn to_fixed_6_truncates_fraction_to_six_digits() {
-        // TODO(student): this assertion is intentionally wrong.
-        // The parser is expected to truncate after 6 digits instead of rounding.
-        assert_eq!(to_fixed_6("1.1234569").unwrap(), 1_123_457);
+        assert_eq!(to_fixed_6("1.1234569").unwrap(), 1_123_456);
     }
 
     #[test]
