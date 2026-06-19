@@ -3,7 +3,7 @@
 // Or from program/: node scripts/get-oracle-pda.js
 const anchor = require("@coral-xyz/anchor");
 const { PublicKey } = anchor.web3;
-const ORACLE_PROGRAM_ID = new PublicKey("BqNxx8MrVnHbvJHPgCMPdY2HNKcPiHk47zm98WY4Ch8Z");
+const ORACLE_PROGRAM_ID = new PublicKey("GPGNDxiv1RPttXyJFkLZq93FCnRSehTuKaSoKSa5UwSP");
 const [oraclePda] = PublicKey.findProgramAddressSync(
   [Buffer.from("oracle_state")],
   ORACLE_PROGRAM_ID
