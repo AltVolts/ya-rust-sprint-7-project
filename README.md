@@ -105,3 +105,4 @@
 - адрес PDA состояния оракула: https://explorer.solana.com/address/7aL2gBP5kK1XMjMx84BRMnWiNtKvYpuT9gcQ69druUY9?cluster=devnet
 - адрес успешной транзакции, выпущенной через frontend: [ChnCFyxgJDRxHuwoaYTSvqnnyERtTaB71uqyizyFUhQBuPseXDWxb3W6wv13T6ayHdM2D58WpJhijH8FZny6oAQ](https://explorer.solana.com/tx/ChnCFyxgJDRxHuwoaYTSvqnnyERtTaB71uqyizyFUhQBuPseXDWxb3W6wv13T6ayHdM2D58WpJhijH8FZny6oAQ?cluster=devnet)
 - адрес нового токена: [EChDnV77yPLhhjS1VbUABVVKjuVE4W9TFJ7eXs2qPiWd](https://explorer.solana.com/address/EChDnV77yPLhhjS1VbUABVVKjuVE4W9TFJ7eXs2qPiWd?cluster=devnet)
+- адрес нового токена Loma: https://explorer.solana.com/tx/2jC8cUY6CsvGLQALH6dbEV4R4mLUPFhqGHkBsz6LxggGhwKtxbyAkdNjVsySVgt4NN78MML2S9vNs4XZHzFa2giA?cluster=devnet
