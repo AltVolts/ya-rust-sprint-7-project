@@ -100,8 +100,8 @@
 
 
 ## Результаты деплоя в devnet:
-- адрес оракула: https://solscan.io/account/DyHtUDmPk5Rs38TJ9Kb54LHVEVC4dQM7FHxZQFN1SVFe?cluster=devnet
-- адрес: https://solscan.io/account/91krDB1zG4cy3b6vDuDY1UB72qeFjvpXNr6a5ifQkDCK?cluster=devnet
-- адрес PDA состояния оракула: https://solscan.io/account/7aL2gBP5kK1XMjMx84BRMnWiNtKvYpuT9gcQ69druUY9?cluster=devnet
-- адрес успешной транзакции, выпущенной через frontend: ChnCFyxgJDRxHuwoaYTSvqnnyERtTaB71uqyizyFUhQBuPseXDWxb3W6wv13T6ayHdM2D58WpJhijH8FZny6oAQ
-- адрес нового токена: EChDnV77yPLhhjS1VbUABVVKjuVE4W9TFJ7eXs2qPiWd
+- адрес оракула: https://explorer.solana.com/address/DyHtUDmPk5Rs38TJ9Kb54LHVEVC4dQM7FHxZQFN1SVFe?cluster=devnet
+- адрес: https://explorer.solana.com/address/91krDB1zG4cy3b6vDuDY1UB72qeFjvpXNr6a5ifQkDCK?cluster=devnet
+- адрес PDA состояния оракула: https://explorer.solana.com/address/7aL2gBP5kK1XMjMx84BRMnWiNtKvYpuT9gcQ69druUY9?cluster=devnet
+- адрес успешной транзакции, выпущенной через frontend: [ChnCFyxgJDRxHuwoaYTSvqnnyERtTaB71uqyizyFUhQBuPseXDWxb3W6wv13T6ayHdM2D58WpJhijH8FZny6oAQ](https://explorer.solana.com/tx/ChnCFyxgJDRxHuwoaYTSvqnnyERtTaB71uqyizyFUhQBuPseXDWxb3W6wv13T6ayHdM2D58WpJhijH8FZny6oAQ?cluster=devnet)
+- адрес нового токена: [EChDnV77yPLhhjS1VbUABVVKjuVE4W9TFJ7eXs2qPiWd](https://explorer.solana.com/address/EChDnV77yPLhhjS1VbUABVVKjuVE4W9TFJ7eXs2qPiWd?cluster=devnet)
