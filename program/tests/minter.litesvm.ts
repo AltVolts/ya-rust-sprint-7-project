@@ -21,8 +21,8 @@ const minterIdl = require("../target/idl/token_minter.json");
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const ORACLE_PROGRAM_ID = new PublicKey("5MKYuxxf2pgQtUjxkW5BdRoKLK6DCdMw9qqXTZX54P1n");
-const MINTER_PROGRAM_ID = new PublicKey("8aGyw5KUNR6axAkEBbtApeAmNQB3WA9CXcDYGVsnXWCp");
+const ORACLE_PROGRAM_ID = new PublicKey("DyHtUDmPk5Rs38TJ9Kb54LHVEVC4dQM7FHxZQFN1SVFe");
+const MINTER_PROGRAM_ID = new PublicKey("91krDB1zG4cy3b6vDuDY1UB72qeFjvpXNr6a5ifQkDCK");
 
 const ORACLE_SO = path.resolve(__dirname, "../target/deploy/sol_usd_oracle.so");
 const MINTER_SO = path.resolve(__dirname, "../target/deploy/token_minter.so");

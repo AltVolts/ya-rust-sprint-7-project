@@ -6,12 +6,12 @@ resolution = true
 skip-lint = false
 
 [programs.devnet]
-sol_usd_oracle = "GPGNDxiv1RPttXyJFkLZq93FCnRSehTuKaSoKSa5UwSP"
-token_minter = "AaTanmwwcwHzRQEdWjLqnC4ikRz8EebL2Wx8Wd5y6EGQ"
+sol_usd_oracle = "DyHtUDmPk5Rs38TJ9Kb54LHVEVC4dQM7FHxZQFN1SVFe"
+token_minter = "91krDB1zG4cy3b6vDuDY1UB72qeFjvpXNr6a5ifQkDCK"
 
 [programs.localnet]
-sol_usd_oracle = "GPGNDxiv1RPttXyJFkLZq93FCnRSehTuKaSoKSa5UwSP"
-token_minter = "AaTanmwwcwHzRQEdWjLqnC4ikRz8EebL2Wx8Wd5y6EGQ"
+sol_usd_oracle = "DyHtUDmPk5Rs38TJ9Kb54LHVEVC4dQM7FHxZQFN1SVFe"
+token_minter = "91krDB1zG4cy3b6vDuDY1UB72qeFjvpXNr6a5ifQkDCK"
 
 [registry]
 url = "https://api.apr.dev"
@@ -19,6 +19,9 @@ url = "https://api.apr.dev"
 [provider]
 cluster = "devnet"
 wallet = "~/.config/solana/id.json"
+
+[workspace]
+sbf_version = "2"
 
 [scripts]
 litesvm = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 \"tests/**/*.ts\""

@@ -97,3 +97,11 @@
 3. `cd program && node scripts/init-local.js` — скопировать `ORACLE_STATE_PUBKEY` в `backend/.env`
 4. `cd backend && cargo run`
 5. `cd frontend && npm run dev` — открыть в браузере и покликать.
+
+
+## Результаты деплоя в devnet:
+- адрес оракула: https://solscan.io/account/DyHtUDmPk5Rs38TJ9Kb54LHVEVC4dQM7FHxZQFN1SVFe?cluster=devnet
+- адрес: https://solscan.io/account/91krDB1zG4cy3b6vDuDY1UB72qeFjvpXNr6a5ifQkDCK?cluster=devnet
+- адрес PDA состояния оракула: https://solscan.io/account/7aL2gBP5kK1XMjMx84BRMnWiNtKvYpuT9gcQ69druUY9?cluster=devnet
+- адрес успешной транзакции, выпущенной через frontend: ChnCFyxgJDRxHuwoaYTSvqnnyERtTaB71uqyizyFUhQBuPseXDWxb3W6wv13T6ayHdM2D58WpJhijH8FZny6oAQ
+- адрес нового токена: EChDnV77yPLhhjS1VbUABVVKjuVE4W9TFJ7eXs2qPiWd
